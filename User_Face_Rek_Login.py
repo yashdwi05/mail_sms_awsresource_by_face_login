@@ -42,7 +42,7 @@ print("Model trained sucessefully")
 
 
 # Get the training data we previously made
-data_path = './facedata/himani/'
+data_path = './facedata/tanvi/'
 onlyfiles = [f for f in listdir(data_path) if isfile(join(data_path, f))]
 
 # Create arrays for training data and labels
@@ -80,7 +80,7 @@ def sms(user):
     message = client.messages.create(
                               body='Hey! ' + user + ' Logged in By face.',
                               from_='+18594487214',
-                              to='+918824881106'
+                              to='+91<receiver_contact>'
     )
 
 
@@ -89,11 +89,11 @@ def email(user, sender_pass):
     mail_content = "Hey!! Face Login By " + user
     
     #The mail addresses and password
-    sender_address = 'yashdwivedi3150@gmail.com'
+    sender_address = 'sender@gmail.com'
     #sender_pass = getpass("Enter Mail Password: ")
     
     print(sender_pass)
-    receiver_address = 'dwiyash23@outlook.com'
+    receiver_address = 'receiver@gmail.com'
 
     #Setup the MIME
     message = MIMEMultipart()
